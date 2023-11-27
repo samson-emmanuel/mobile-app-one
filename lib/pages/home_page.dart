@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smartyou/class/item_class.dart';
 import 'package:smartyou/constants/const_file.dart';
 import 'package:smartyou/widgets/cards_widgets.dart';
 
@@ -11,33 +12,41 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Home Page'),
       ),
-      body: const SingleChildScrollView(
+      body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: kdouble5,
             ),
             CardWidget(
-              title: 'Rocket',
-              imagepath: 'images/rocket.png',
+              box: ItemClass(
+                title: 'Rocket',
+                imagepath: 'images/rocket.png',
+              ),
             ),
             Row(
               children: [
                 Expanded(
                     child: CardWidget(
-                  title: 'Space',
-                  imagepath: 'images/space.png',
+                  box: ItemClass(
+                    title: 'Space',
+                    imagepath: 'images/space.png',
+                  ),
                 )),
                 Expanded(
                     child: CardWidget(
-                  title: 'Travel',
-                  imagepath: 'images/travel.png',
+                  box: ItemClass(
+                    title: 'Travel',
+                    imagepath: 'images/travel.png',
+                  ),
                 )),
               ],
             ),
             CardWidget(
-              title: 'Yeah',
-              imagepath: 'images/yeah.png',
+              box: ItemClass(
+                title: 'Yeah',
+                imagepath: 'images/yeah.png',
+              ),
             )
           ],
         ),

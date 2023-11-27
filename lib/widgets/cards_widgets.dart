@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:smartyou/class/item_class.dart';
 import 'package:smartyou/constants/const_file.dart';
 
 class CardWidget extends StatelessWidget {
-  const CardWidget({super.key, required this.title, required this.imagepath});
+  const CardWidget({super.key, required this.box,});
 
-  final String title; 
-  final String imagepath;
+  final ItemClass box; 
 
   @override
   Widget build(BuildContext context) {
@@ -15,10 +15,10 @@ class CardWidget extends StatelessWidget {
         width: double.infinity,
         child: Column(
           children: [
-            Image.asset(imagepath),
+            Image.asset(box.imagepath),
             Text(
-              title,
-              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+              box.title,
+              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
             ),
             const Text('Description'),
             const SizedBox(
