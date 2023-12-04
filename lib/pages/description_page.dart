@@ -7,7 +7,7 @@ import 'package:smartyou/class/item_class.dart';
 import 'package:smartyou/constants/const_file.dart';
 
 class DescriptionPage extends StatefulWidget {
-  DescriptionPage({
+ const DescriptionPage({
     super.key,
     required this.box,
   });
@@ -20,7 +20,7 @@ class DescriptionPage extends StatefulWidget {
 
 class _DescriptionPageState extends State<DescriptionPage> {
   double fontsizes = 25;
-  String mainTopic = 'FootBall';
+  String mainTopic = 'News';
 
   @override
   Widget build(BuildContext context) {
@@ -59,7 +59,7 @@ class _DescriptionPageState extends State<DescriptionPage> {
                     onPressed: () {
                       setState(() {
                         fontsizes = 100;
-                        mainTopic = 'BasketBall';
+                        mainTopic = 'News';
                       });
                     },
                     child: const Text('Button 2'),
@@ -68,7 +68,7 @@ class _DescriptionPageState extends State<DescriptionPage> {
                     onPressed: () {
                       setState(() {
                         fontsizes = 100;
-                        mainTopic = 'VolleyBall';
+                        mainTopic = 'News';
                       });
                     },
                     child: const Text('Button 3'),
@@ -77,7 +77,7 @@ class _DescriptionPageState extends State<DescriptionPage> {
                     onPressed: () {
                       setState(() {
                         fontsizes = 100;
-                        mainTopic = 'Wrestling';
+                        mainTopic = 'News';
                       });
                     },
                     child: const Text('Button 4'),

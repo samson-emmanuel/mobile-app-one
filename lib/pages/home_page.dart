@@ -20,8 +20,8 @@ class HomePage extends StatelessWidget {
             ),
             CardWidget(
               box: ItemClass(
-                title: 'Rocket',
-                imagepath: 'images/rocket.png',
+                title: 'Tech',
+                imagepath: 'images/tech.png',
               ),
             ),
             Row(
@@ -29,23 +29,23 @@ class HomePage extends StatelessWidget {
                 Expanded(
                     child: CardWidget(
                   box: ItemClass(
-                    title: 'Space',
-                    imagepath: 'images/space.png',
+                    title: 'Business',
+                    imagepath: 'images/business.png',
                   ),
                 )),
                 Expanded(
                     child: CardWidget(
                   box: ItemClass(
-                    title: 'Travel',
-                    imagepath: 'images/travel.png',
+                    title: 'Sport',
+                    imagepath: 'images/sport.png',
                   ),
                 )),
               ],
             ),
             CardWidget(
               box: ItemClass(
-                title: 'Yeah',
-                imagepath: 'images/yeah.png',
+                title: 'Entertainment',
+                imagepath: 'images/entertainment.png',
               ),
             )
           ],

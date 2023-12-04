@@ -13,7 +13,7 @@ class _WidgetPathState extends State<WidgetPath> {
   int currentPage = 0;
 
   List<Widget> pages = [
-    HomePage(), ProfilePage(),
+   const HomePage(), const ProfilePage(),
   ];
 
   @override
